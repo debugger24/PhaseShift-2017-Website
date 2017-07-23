@@ -3821,6 +3821,29 @@
 		background-color: #1d242a;
 	}
 
+
+	#about {
+		background-color: rgb(10, 60, 75);
+	}
+
+	#events {
+		background-color: rgb(15, 100, 110);
+	}
+
+	#collaborations {
+		background-color: rgb(255, 255, 255);
+		color: rgb(0, 0, 0);
+	}
+
+	#collaborations h2 {
+		color: rgb(0, 0, 0);
+	}
+
 	#gallery {
-		background-color: rgb(45, 70, 150);
+		background-color: rgb(30, 75, 110);
+	}
+
+	#PS_Logo {
+		width: 200px;
+		margin-bottom: 20px;
 	}
