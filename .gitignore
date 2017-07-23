@@ -1,7 +1,2 @@
-# Images & Fonts
-*.png
-*.jpg
-*.jpeg
-images/*
-assets/images/*
+# Fonts
 assets/fonts/*
