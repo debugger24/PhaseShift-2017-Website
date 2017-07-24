@@ -1,5 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 
 /*
 	Spectral by HTML5 UP
@@ -1385,6 +1386,11 @@
 
 		.\-1u\28xsmall\29 {
 			margin-left: 8.33333%;
+		}
+
+		#PS_Logo {
+			width: 150px;
+			margin-bottom: 10px;
 		}
 
 	}
@@ -3709,7 +3715,7 @@
 
 	#footer {
 		padding: 6em 0 4em 0 ;
-		background-color: #1d242a;
+		background-color: #212121;
 		text-align: center;
 	}
 
@@ -3831,7 +3837,7 @@
 	}
 
 	#collaborations {
-		background-color: rgb(255, 255, 255);
+		background-color: rgba(0,181,172,0.5);
 		color: rgb(0, 0, 0);
 	}
 
@@ -3845,5 +3851,149 @@
 
 	#PS_Logo {
 		width: 200px;
-		margin-bottom: 20px;
+		margin-bottom: 5px;
 	}
+
+@media screen and (max-height: 600px) {
+	#PS_Logo {
+		width: 150px;
+		margin-bottom: 0px;
+	}
+}
+
+
+/*css code for section "team"*/
+
+
+
+.snip1344 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.4em;
+  background-color: #141414;
+}
+.snip1344 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.snip1344 .background {
+  width: 100%;
+  vertical-align: top;
+  opacity: 0.2;
+  -webkit-filter: grayscale(100%) blur(10px);
+  filter: grayscale(100%) blur(10px);
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+.snip1344 figcaption {
+  width: 100%;
+  padding: 15px 25px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.snip1344 .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  max-width: 100px;
+  opacity: 1;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+.snip1344 h3 {
+  margin: 0 0 5px;
+  font-weight: 400;
+}
+.snip1344 h3 span {
+  display: block;
+  font-size: 0.6em;
+  color: #f39c12;
+  opacity: 0.75;
+}
+.snip1344 i {
+  padding: 10px 5px;
+  display: inline-block;
+  font-size: 32px;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0.65;
+}
+.snip1344 a {
+  text-decoration: none;
+}
+.snip1344 i:hover {
+  opacity: 1;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1344:hover .background,
+.snip1344.hover .background {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+
+#team {
+	background-color: #212121;
+}
+#team hr {
+	display: block;
+	height: 3px;
+	border: 0;
+	margin: 3em 0;
+	padding: 0;
+	background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #71c9d6, rgba(255, 255, 255, 0));
+	background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), #71c9d6, rgba(255, 255, 255, 0));
+	background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0), #71c9d6, rgba(255, 255, 255, 0));
+	background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), #71c9d6, rgba(255, 255, 255, 0));
+	width: 50%;
+	left: 25%;
+	position: relative;
+	border: none;
+}
+#team H2 {
+	color: #fff;
+}
+#team p {
+	color: #fff;
+}
+#team H4 {
+	padding-top: 10px;
+	color: #fff;
+	font-weight:bold;
+}
+#team p.large {
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+#team .fa {
+	width: 30px;
+	height: 30px;
+	margin: 0 3px;
+	border-radius: 100%;
+	font-size: 15px;
+	line-height: 30px;
+	outline: 0;
+	color: #fff;
+	background-color: #67c5d3;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+#team .fa:hover {
+	background-color: #2ea0b1;
+}
