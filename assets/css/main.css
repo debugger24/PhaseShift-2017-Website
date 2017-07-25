@@ -3997,3 +3997,53 @@
 #team .fa:hover {
 	background-color: #2ea0b1;
 }
+
+/* CSS for sponsors page. */
+.col-sm-3 img {
+	display: inline-block;
+	float: left;
+    width: 250px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.col-sm-4 img {
+	display: inline-block;
+	float: left;
+    width: 330px;
+    height: 170px;
+}
+
+.container-fluid {
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.t_s img {
+    width: 400px;
+    height: 230px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1050px) {
+    .col-sm-3 img {
+        width: 150px;
+        height: 100px;
+    }
+    .col-sm-4 img {
+        width: 180px;
+        height: 90px;
+    }
+    .container-fluid {
+        margin-left: 30px;
+    }
+    .t_s img {
+        width: 180px;
+        height: 90px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .container-fluid {
+        padding-left: 45px;
+	}
+}
