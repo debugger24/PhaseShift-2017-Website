@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Phase Shift - Spectral</title>
+		<title>Phase Shift</title>
 		<meta charset="utf-8" />
 		  <meta name="viewport" content="width=device-width, initial-scale=1">
   			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -26,48 +26,8 @@
 			<div id="page-wrapper">
 
 				<!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" style="background-color:#000;" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="w3-button w3-black"href="#page-top">
-
-                    <img src="images/PS/WHITE LOGO.png" style="width:25px;height: 30px; vertical-align: middle;"></i> <span class="light" style=" vertical-align: middle;">&nbspPhase Shift 2017</span>
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-					<li>
-                        <a href="#about" class="w3-button w3-black">About us</a>
-                    </li>
-                    <li>
-                        <a class="w3-button w3-black" href="#events">Events</a>
-                    </li>
-                    <li>
-                        <a class="w3-button w3-black" href="#workshops">Workshops</a>
-                    </li>
-                    <li>
-                        <a class="w3-button w3-black" href="#collaborations">Collaborations</a>
-                    </li>
-                    <li>
-                        <a class="w3-button w3-black" href="#gallery">Gallery</a>
-                    </li>
-                    <li>
-                        <a class="w3-button w3-black" href="#contact">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
+    <nav class="navbar navbar-custom navbar-fixed-top" id="NavBar" style="background-color:#000;" role="navigation">
+        
     </nav>
 
 
@@ -259,7 +219,6 @@
 					</footer>
 
 			</div>
-
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -269,10 +228,14 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/lightbox.js"></script>
+			<script>
+	$("#NavBar").load("NavBar.html");
+			</script>
 <script>
+	$.noConflict();
 $(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#page-top']").on('click', function(event) {
+	// Add smooth scrolling to all links in navbar + footer link
+	$(".navbar a, footer a[href='#page-top']").on('click', function(event) {
 
     // Prevent default anchor click behavior
     event.preventDefault();
@@ -301,7 +264,7 @@ $(document).ready(function(){
         }
     });
   });
-})
+});
 </script>
 
     <!-- Bootstrap Core JavaScript -->

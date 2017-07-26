@@ -26,34 +26,9 @@
 <div id="page-wrapper">
 
         <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" style="background-color:#000;" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="w3-button w3-black"href="index.html">
-
-                    <img src="images/PS/WHITE LOGO.png" style="width:25px;height: 30px; vertical-align: middle;"></i> <span class="light" style=" vertical-align: middle;">&nbspPhase Shift 2017</span> 
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-          
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        </nav>
-
-
-<section id="team" class="wrapper style3 special" >
+<nav class="navbar navbar-custom navbar-fixed-top" id="NavBar" style="background-color:#000;" role="navigation">
+</nav>
+					<section id="team" class="wrapper style3 special" >
 						<div class="inner">
 							<header class="major">
 								<h2>The Team</h2>
@@ -208,5 +183,7 @@
                 </div>
                 </div>
 
-
+<script>
+	$("#NavBar").load("NavBar.html");
+</script>
 </html>
