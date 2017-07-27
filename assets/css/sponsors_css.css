@@ -1,0 +1,50 @@
+/* CSS for sponsors page. */
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    text-align: center;
+}
+
+.gallery-container {
+    display: inline-block;
+    width: 300px;
+    height: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: auto;
+}
+
+
+.t_s img {
+    width: 400px;
+}
+
+@media only screen and (max-width: 1550px) {
+    .gallery-container {
+        width: 225px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .gallery-container {
+        width: 150px;
+    }
+
+    .t_s img {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .gallery-container {
+        width: 250px;
+    }
+}
+
