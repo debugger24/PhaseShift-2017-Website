@@ -24,7 +24,7 @@
 
 </head>
 <body class="workshop-body">
-
+	<nav class="navbar navbar-custom navbar-fixed-top" id="NavBar" style="background-color:#000;" role="navigation"></nav>
 	<div class="workshop-wrp">
 		<div class="workshop-bell"><img class="workshop-bell-img" src="/assets/iitd/ic_alert.png"></div>
 		<div class="workshop-update"><h1 style="font-size:50px;">Events 2017</h1></div>
@@ -6061,5 +6061,10 @@ After that, you’ll have to come up with solutions for the hypothetical situati
     ga('require', 'displayfeatures');
     ga('send', 'pageview');
 </script>
+
+<script>
+	$("#NavBar").load("NavBar.html");
+</script>
+
 </body>
 </html>
