@@ -1,18 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 @font-face {
     font-family: Muli;
     src: url(https://storage.googleapis.com/ehassets/fonts/Muli.ttf?rc=1) format("truetype");
     font-weight: Normal;
     font-style: normal
 }
-@font-face {
-    font-family: MuliBold;
-    src: url(https://storage.googleapis.com/ehassets/fonts/Muli-Bold.ttf?rc=1) format("truetype");
-    font-weight: Bold;
-    font-style: normal
+
+#back{
+  background: #3e807e;
 }
 
 body{
-  background-color:blanchedalmond;
+  background-color:#0d262e;
 }
 .clearfix {
     *zoom: 1
@@ -63,7 +63,7 @@ ul.home-container-wrp {
 .mob-drawer-title {
     width: 70%;
     float: left;
-    font-family: Lato;
+    font-family: 'Roboto';
     color: #fff;
     line-height: 30px;
     padding-left: 10px;
@@ -246,7 +246,7 @@ ul.home-container-wrp {
     display: inline-block;
     padding: 0 5px;
     margin: 5px 0 15px;
-    font-family: lato;
+    font-family: 'Roboto';
     text-transform: capitalize
 }
 .learn-box-header {
@@ -285,10 +285,11 @@ ul.home-container-wrp {
 }
 .selected .categories-title {
     color: #114075;
-    font-weight: 700
+    font-weight: 700;
+    font-family: ''Roboto'';
 }
 .categories-box.selected {
-    border-color: #114075;
+    border-color: #111a23;
     background-color:white;.
 }
 .new-cards-img-wrp.startup-vc-img {
@@ -314,12 +315,12 @@ ul.home-container-wrp {
     height: 70px;
     text-align: center;
     border-radius: 7px;
-    background: #114075;
-    border: 2px solid #ddd;
+    background: #24616f;
+    border: 2px solid #111a23;
     margin: 10px 10px;
     padding: 10px;
     cursor: pointer;
-    font-family: lato
+    font-family: 'Roboto'
 }
 .other-row {
     margin: 0;
@@ -343,14 +344,15 @@ ul.home-container-wrp {
     margin: 0 10px;
     padding: 10px;
     cursor: pointer;
-    font-family: lato
+    font-family: 'Roboto'
 }
 .startup-box.panel-box {
     width: calc(50% - 20px)
 }
 .categories-title {
     color: white;
-    font-size: 18px
+    font-size: 18px;
+    font-family: 'Roboto';
 }
 .categories-img {
     width: 75px;
@@ -387,7 +389,7 @@ ul.home-container-wrp {
     padding: 7px 15px 6px;
     cursor: pointer;
     font-size: 16px;
-    font-family: lato
+    font-family: 'Roboto'
 }
 .home-footer-wrp {
     width: 100%;
@@ -411,14 +413,14 @@ ul.home-container-wrp {
     margin: 25px auto
 }
 .workshop-spotlight-desc-desc {
-    font-family: Lato;
+    font-family: 'Roboto';
     font-size: 15px;
     text-align: justify;
     color: #999
 }
 .workshop-spotlight-desc-title {
     font-size: 26px;
-    font-family: Lato;
+    font-family: 'Roboto';
     margin-bottom: 10px;
     font-weight: 700;
     color: #666;
@@ -641,7 +643,7 @@ ul.home-container-wrp-footer {
     left: 50%;
     -webkit-transform: translateX(-20%);
     transform: translateX(-20%);
-    font-family: Lato
+    font-family: 'Roboto'
 }
 .accom-box-new .triangle-up-team {
     top: -9px
@@ -662,7 +664,7 @@ ul.home-container-wrp-footer {
 }
 .accom-data-new-title {
     font-size: 21px;
-    font-family: Lato;
+    font-family: 'Roboto';
     margin-bottom: 10px;
     font-weight: 700;
     color: #666;
@@ -674,7 +676,7 @@ ul.home-container-wrp-footer {
     text-align: center
 }
 .accom-data-new-data {
-    font-family: Lato;
+    font-family: 'Roboto';
     font-size: 15px;
     text-align: justify;
     color: #999
@@ -1007,7 +1009,7 @@ ul.home-container-wrp-footer {
     text-align: center;
     width: 200%;
     text-transform: uppercase;
-    font-family: Lato;
+    font-family: 'Roboto';
     color: #fff;
     font-size: 12.5px;
     left: -50%;
@@ -1169,7 +1171,7 @@ ul.home-container-wrp-footer {
     text-align: center;
     width: 200%;
     text-transform: uppercase;
-    font-family: Lato;
+    font-family: 'Roboto';
     font-size: 14px;
     left: -50%;
     font-size: 35px
@@ -1532,13 +1534,13 @@ body {
 }
 .learn-btn {
     color: #fff;
-    background: #114075;
+    background: #0e323e;
     padding: 10px 10px 6px;
     font-size: 18px;
     cursor: pointer;
     width: 80%;
     min-width: 225px;
-    font-family: lato
+    font-family: 'Roboto'
 }
 .button-patner,
 .learn-btn {
@@ -1770,7 +1772,7 @@ body {
 }
 .card-data-wrp {
     padding: 0 15px 10px;
-    background: #fff;
+    background: #768b93;
     min-width: 225px;
     width: 80%;
     margin: 0 auto;
@@ -1787,11 +1789,11 @@ body {
     box-shadow: none
 }
 .event-card-desc {
-    color: #999;
+    color: #0a0a0a;
     font-size: 15px;
     text-align: justify;
     margin: 5px 0 0;
-    font-family: lato;
+    font-family: 'Roboto';
     overflow: hidden;
     height: 84px
 }
@@ -1823,7 +1825,7 @@ body {
 .card-title,
 .event-card-title {
     font-size: 20px;
-    color: #666;
+    color: #0a0a0a;
     margin-top: 10px;
     text-align: center;
     border: 3px solid #333;
@@ -1831,7 +1833,7 @@ body {
     border-right: 0;
     margin-left: -15px;
     margin-right: -15px;
-    font-family: lato
+    font-family: 'Roboto'
 }
 .card-image-layer {
     width: 100%;
@@ -1853,7 +1855,7 @@ body {
     text-align: center;
     font-size: 16px;
     color: #666;
-    font-family: lato
+    font-family: 'Roboto'
 }
 .date-box-outer-wrp {
     text-align: center
@@ -1885,7 +1887,7 @@ body {
 .workshop-title {
     font-size: 16px;
     text-align: center;
-    font-family: lato
+    font-family: 'Roboto'
 }
 .login-wrp {
     max-width: 500px;
@@ -1904,7 +1906,7 @@ span.check-tick {
     border-bottom: 2px solid #eee;
     font-size: 23px;
     color: #666;
-    font-family: Lato
+    font-family: 'Roboto'
 }
 .login-input-wrp,
 .login-title {
@@ -1914,7 +1916,7 @@ span.check-tick {
     color: #999;
     font-size: 16px;
     margin-bottom: 5px;
-    font-family: Lato
+    font-family: 'Roboto'
 }
 .login-remember-wrp {
     float: left;
@@ -1935,7 +1937,7 @@ span.check-tick {
 .login-remember-text {
     float: left;
     color: #999;
-    font-family: Lato
+    font-family: 'Roboto'
 }
 .login-input-inner-wrp input {
     width: 100%;
@@ -1953,7 +1955,7 @@ span.check-tick {
     padding: 8px 20px 5px;
     border-radius: 7px;
     cursor: pointer;
-    font-family: Lato
+    font-family: 'Roboto'
 }
 .leader-header-icon {
     background-image: url(//storage.googleapis.com/ehassets/iitd/icon.png);
@@ -2021,7 +2023,7 @@ span.check-tick {
 .startup-data,
 .startup-title {
     font-size: 17px;
-    font-family: Lato
+    font-family: 'Roboto'
 }
 .startup-data {
     margin: 0 0 10px;
@@ -2210,9 +2212,10 @@ span.check-tick {
 }
 .workshop-body {
     position: relative;
-
+    background-color: #071217;
 
 }
+
 .workshop-body-img {
 
     background-position-x: center;
@@ -2239,13 +2242,13 @@ span.check-tick {
 .contact-form-subtitle {
     font-size: 17px;
     color: #666;
-    font-family: Lato
+    font-family: 'Roboto'
 }
 .contact-form-title {
     font-size: 20px;
     color: #114075;
     font-weight: 700;
-    font-family: Lato
+    font-family: 'Roboto'
 }
 .send-btn {
     background-color: #114075;
@@ -2256,7 +2259,7 @@ span.check-tick {
     margin: 20px 0 10px;
     font-size: 16px;
     cursor: pointer;
-    font-family: Lato
+    font-family: 'Roboto'
 }
 .contact-form-wrp {
     padding: 0 10px
@@ -2271,12 +2274,12 @@ span.check-tick {
 .contact-header-tab-text {
     font-size: 14px;
     color: #999;
-    font-family: Lato
+    font-family: 'Roboto'
 }
 .contact-header-tab-name {
     font-size: 17px;
     color: #444;
-    font-family: Lato
+    font-family: 'Roboto'
 }
 .contact-header-tab-outer-wrp {
     text-align: center
@@ -2288,7 +2291,7 @@ span.check-tick {
 .contact-message {
     height: 100px;
     resize: none;
-    font-family: Lato
+    font-family: 'Roboto'
 }
 .contact-email,
 .contact-message {
@@ -2390,7 +2393,7 @@ span.check-tick {
 }
 .header-mob-box {
     text-transform: uppercase;
-    font-family: Lato;
+    font-family: 'Roboto';
     color: #fff;
     width: calc(100% - 20px);
     float: left;
@@ -2883,7 +2886,7 @@ li.hexa-header.top .front:before {
 .span-wrp {
     float: left;
     min-width: 190px;
-    font-family: Lato;
+    font-family: 'Roboto';
     font-size: 19px;
     text-transform: uppercase
 }
@@ -3022,7 +3025,7 @@ li.hexa-header.top .front:before {
 }
 .sponsor-type {
     text-align: center;
-    font-family: MuliBold;
+    font-family: 'Roboto';
     font-size: 16px
 }
 .popup-data-right-title {
@@ -3030,7 +3033,7 @@ li.hexa-header.top .front:before {
 }
 .lecture-desc {
     font-size: 17px;
-    font-family: Lato;
+    font-family: 'Roboto';
     margin: 10px 0;
     text-align: justify
 }
@@ -3041,7 +3044,7 @@ li.hexa-header.top .front:before {
 }
 .lecture-speaker-title,
 .lecture-subtitle {
-    font-family: Lato;
+    font-family: 'Roboto';
     text-decoration: underline
 }
 .lecture-speaker-title {
@@ -3218,7 +3221,7 @@ li.hexa-header.top .front:before {
 }
 .final-desc {
     font-size: 17px;
-    font-family: Lato;
+    font-family: 'Roboto';
     margin: 10px 0;
     text-align: center
 }
@@ -3450,7 +3453,7 @@ li.hexa-header.top .front:before {
     .popup-data-right-title {
         display: block;
         font-size: 13px;
-        font-family: MuliBold;
+        font-family: 'Roboto';
         margin-top: 3px;
         color: #333
     }
@@ -4187,7 +4190,7 @@ li.hexa-header.top .front:before {
         text-align: center;
         width: 200%;
         text-transform: uppercase;
-        font-family: Lato;
+        font-family: 'Roboto';
         font-size: 10px;
         left: -50%;
         font-size: 20px
