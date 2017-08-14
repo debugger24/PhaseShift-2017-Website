@@ -4059,3 +4059,21 @@
 #workshopsLearnMore {
 	margin-top: 40px;
 }
+
+#countdown {
+	font-size: 40px;
+	margin-top: 15px;
+	color: #78dbfb;
+}
+
+@media only screen and (max-width: 768px) {
+    #countdown {
+    	font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    #countdown {
+    	font-size: 15px;
+    }
+}

@@ -41,7 +41,7 @@
 							<p>BMSCE's Tech Symposium</p>
 							<p>September 15<sup>th</sup> and 16<sup>th</sup></p>
 							<p>2017</p>
-							<p id="demo" style="font-size: 40px; margin-top: 15px; color: #78dbfb"></p>
+							<p id="countdown"></p>
 
 
 						</div>
@@ -370,14 +370,14 @@
 			  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 			  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-			  // Display the result in the element with id="demo"
-			  document.getElementById("demo").innerHTML = days + " d "+ ":" + hours + " h " + ":"
+			  // Display the result in the element with id="countdown"
+			  document.getElementById("countdown").innerHTML = days + " d "+ ":" + hours + " h " + ":"
 			  + minutes + " m " + ":" + seconds + " s ";
 
 			  // If the count down is finished, write some text
 			  if (distance < 0) {
 			    clearInterval(x);
-			    document.getElementById("demo").innerHTML = "EXPIRED";
+			    document.getElementById("countdown").innerHTML = "EXPIRED";
 			  }
 			}, 1000);
 			</script>
