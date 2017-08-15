@@ -10,9 +10,3 @@
 .card_img {
   width: 100%;
 }
-
-@media only screen and (max-width: 320px) {
-  .w3-card-4 .w3-teal .team_card {
-    max-width: 200px;
-  }
-}

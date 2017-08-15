@@ -4077,3 +4077,94 @@
     	font-size: 15px;
     }
 }
+
+.top_logo {
+	width: 25px;
+	vertical-align: middle;
+}
+
+@media only screen and (max-width: 1205px) {
+	.container.nav-container {
+		width: 95%;
+	}
+
+	.top_logo {
+		width: 20px;
+	}
+
+	.w3-button.w3-black.main-button {
+		font-size: 12px;
+	}
+
+	.w3-button.w3-black.nav-button {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 955px) {
+	.container.nav-container {
+		width: 100%;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.w3-button.w3-black.main-button {
+		font-size: 12px;
+	}
+
+	.w3-button.w3-black.nav-button {
+		font-size: 10px;
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 786px) {
+	.w3-button.w3-black.main-button {
+		font-size: 11px;
+	}
+
+	.w3-button.w3-black.nav-button {
+		font-size: 9px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.w3-button.w3-black.main-button {
+		width: 100%;
+		font-size: 18px;
+		margin-left: 10px;
+		margin-top: 5px;
+	}
+
+	.main-button-li {
+		width: 50%;
+	}
+
+	.top_logo {
+		width: 25px;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.main-button-li {
+		width: 50%;
+	}
+
+	.top_logo {
+		width: 15px;
+		margin-left: 10px;
+	}
+
+	.w3-button.w3-black.main-button {
+		font-size: 15px;
+	}
+}
+
+@media only screen and (max-width: 345px) {
+	.w3-button.w3-black.main-button {
+		font-size: 10px;
+	}
+
+	.navbar-toggle.menu-button {
+		font-size: 12px;
+	}
+}
