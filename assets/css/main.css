@@ -3827,9 +3827,15 @@
 		background-color: #1d242a;
 	}
 
-
 	#about {
 		background-color: rgb(10, 60, 75);
+	}
+
+	#mv_image {
+		margin-top: 10px;
+		border-radius:50%;
+		width:250px;
+		margin-bottom:25px;
 	}
 
 	#events {
@@ -3860,6 +3866,8 @@
 		margin-bottom: 0px;
 	}
 }
+
+
 
 
 /*css code for section "team"*/
@@ -4077,6 +4085,8 @@
     	font-size: 15px;
     }
 }
+
+/* Navbar CSS */
 
 .top_logo {
 	width: 25px;
