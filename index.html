@@ -22,6 +22,9 @@
 
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
+
+
 	</head>
 	<body class="landing" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
@@ -45,7 +48,7 @@
 
 
 						</div>
-						<a href="#about" class="more scrolly">Learn More</a>
+						<a href="#about" class="more scrolly"></a>
 					</section>
 
 				<!-- One -->
@@ -55,7 +58,7 @@
 							<div>
 								<h2>About Us</h2>
 							</div>
-								<img src="images/mv_portrait.jpg" 
+								<img src="images/mv_portrait.jpg"
 								id = "mv_image"> <br> <br>
 								<p>PhaseShift is an annual tech symposium of BMS College Of Engineering and is one of the largest of its kind in South India. It encourages budding engineering students to exhibit their talents and demonstrate  skills through competitions and workshops. It aims to coalesce ideas from industry in order to achieve high level of skill to help the students emerge as globally competent professionals. Participation of many industry experts and professionals creates a congenial atmosphere that knits learning and fun. By embracing technology, Phase Shift organises a plethora of events collaborated with industries that provides a neat paradigm to encourage technological advances through seminars, workshops, competitions and multidisciplinary events. By doing so, the sponsors get to influence people and work miracles. This not only helps to spread the ideology behind each event but also helps the sponsors get more publicity with our unique strategy for the same. They are assured of a huge benefit from the exposure to a large and diverse crowd that PhaseShift attracts.</p>
 								<br/>
@@ -297,13 +300,12 @@
 						<section class="spotlight">
 							<div class="image"><img src="images/contact-bg.jpg" alt="" /></div><div class="content">
 								<h2>Contact Us</h2>
-								<p>Phone: Akshay Deogiri - +91 9481310600</p>
-								<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  T Mithun &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- +91 9535262771</p>
-								<p>Address:<br/>
+								<p><b >Email</b>: phaseshift@bmsce.ac.in</p>
+								<p><b >Address</b>:
 								B.M.S. College of Engineering<br/>
 								Bull Temple Rd, Basavanagudi, Bengaluru, Karnataka 560019<br/>
 								</p>
-								<p>Email: phaseshift@bmsce.ac.in</p>
+
 							</div>
 						</section>
 					</section>
@@ -391,7 +393,7 @@ $(document).ready(function(){
 	$(".navbar a, footer a[href='#page-top']").on('click', function(event) {
 
     // Prevent default anchor click behavior
-    event.preventDefault();
+    //event.preventDefault();
 
     // Store hash
     var hash = this.hash;
@@ -424,6 +426,11 @@ $(document).ready(function(){
 	$(".collapse").slideToggle('fast');
   });
 });
+
+$("section").on("click",function(event){
+  if($(".navbar-nav").is(":visible"))
+    $(".collapse").slideToggle('fast');
+  });
 </script>
 
     <!-- Bootstrap Core JavaScript -->
