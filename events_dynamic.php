@@ -77,7 +77,6 @@
       <script>
       function load_events_list(category_name) {
         $("#events-list").empty();
-        $("#events-list").append("<h4 class='center-align blue-grey-text text-lighten-1'>" + category_name + "</h4>");
         $("#events-list").load("load-events.php", { cat_name: category_name });
       }
 

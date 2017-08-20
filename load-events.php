@@ -2,6 +2,9 @@
   include 'dbconn.php';
 
   $category_name = $_POST['cat_name'];
+  echo  "<h4 class='center-align blue-grey-text text-lighten-1'>";
+  echo    $category_name;
+  echo  "</h4>";
 
   $sql_query = "SELECT Title, Description from event WHERE Category = '$category_name'";
   $result = mysqli_query($conn, $sql_query);
