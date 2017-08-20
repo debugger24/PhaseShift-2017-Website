@@ -25,7 +25,7 @@
       }
 
       // Creating a card.
-      echo    "<div class='col s12 m6 l3'>
+      echo    "<div class='col s12 l3'>
                 <div class='card blue-grey darken-1'>
                   <div class='card-content white-text'>";
 
