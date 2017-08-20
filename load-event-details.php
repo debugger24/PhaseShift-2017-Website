@@ -101,6 +101,17 @@
       echo      " - ";
       echo      $row['Number'];
       echo    "</p>";
+
+      // Second co-ordinator
+      if (!empty($row['Name2']))
+      {
+        echo    "<p>";
+        echo      $row['Name2'];
+        echo      " - ";
+        echo      $row['Number2'];
+        echo    "</p>";
+      }
+
     }
 
     echo  "</div>";

@@ -6,7 +6,7 @@
   echo    $category_name;
   echo  "</h4>";
 
-  $sql_query = "SELECT Title, Description from event WHERE Category = '$category_name'";
+  $sql_query = "SELECT Title, Description from event WHERE Category = '$category_name' AND Type = 'Event'";
   $result = mysqli_query($conn, $sql_query);
   if (mysqli_num_rows($result) > 0)
   {
