@@ -118,7 +118,9 @@
     // Modal Footer
     echo  "<div class='modal-footer'>
             <div class='center-align'>
-              <a href='#!'' class='modal-action modal-close waves-effect waves-green btn-large'>Register</a>
+              <a class='modal-action waves-effect waves-green btn-large register-btn' data-event-name='";
+    echo        $row['Title'];
+    echo      "'>Register</a>
             </div>
           </div>";
   }

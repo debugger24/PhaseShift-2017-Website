@@ -85,6 +85,11 @@
         $("#events-modal").load("load-event-details.php", { evt_name: event_name });
       }
 
+      function load_registration_form(event_name) {
+        $("#events-modal").empty();
+        $("#events-modal").load("load-registration-form.php", { evt_name: event_name });
+      }
+
         $(document).ready(function() {
           // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
           $('.modal').modal();
@@ -95,6 +100,16 @@
           });
 
           $("#events-list").on("click", ".event-modal-btn", function() {
+            var evt_name = $(this).attr("data-event-name");
+            load_event_modal(evt_name);
+          });
+
+          $("#events-modal").on("click", ".register-btn", function() {
+            var evt_name = $(this).attr("data-event-name");
+            load_registration_form(evt_name);
+          });
+
+          $("#events-modal").on("click", ".back-details-btn", function() {
             var evt_name = $(this).attr("data-event-name");
             load_event_modal(evt_name);
           });

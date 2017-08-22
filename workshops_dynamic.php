@@ -46,6 +46,11 @@
         $("#workshops-modal").load("load-workshop-details.php", { wrk_name: workshop_name });
       }
 
+      function load_registration_form(workshop_name) {
+        $("#workshops-modal").empty();
+        $("#workshops-modal").load("load-registration-form.php", { evt_name: workshop_name });
+      }
+
         $(document).ready(function() {
           // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
           $('.modal').modal();
@@ -53,6 +58,16 @@
           $("#workshops-list").on("click", ".workshop-modal-btn", function() {
             var wrk_name = $(this).attr("data-workshop-name");
             load_workshop_modal(wrk_name);
+          });
+
+          $("#workshops-modal").on("click", ".register-btn", function() {
+            var evt_name = $(this).attr("data-event-name");
+            load_registration_form(evt_name);
+          });
+
+          $("#workshops-modal").on("click", ".back-details-btn", function() {
+            var evt_name = $(this).attr("data-event-name");
+            load_workshop_modal(evt_name);
           });
 
           load_workshops_list();
