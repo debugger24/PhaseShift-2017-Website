@@ -1,9 +1,9 @@
 <?php
 
-$servername = "127.0.0.1";
-$username = "root";
-$password = "";
-$dbname = "ps";
+$servername = "localhost";
+$username = "ps_team";
+$password = "C7_yQw#A@kx=";
+$dbname = "PhaseShift2017";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 ?>
