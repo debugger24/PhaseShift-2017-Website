@@ -64,6 +64,10 @@
 					  </div>
 			      	</div>
 			      </div>
+
+
+				  <p class='center-align'>Registrations opening soon.</p>
+
 			    </form>
 			</div>";
 
