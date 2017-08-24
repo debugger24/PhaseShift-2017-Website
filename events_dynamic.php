@@ -69,6 +69,8 @@
 
       <div id="events-modal" class="modal"></div>
 
+      <div id="reg-check"></div>
+
 
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -94,6 +96,44 @@
       function handle_payment(response, event_name) {
         $("#events-modal").empty();
         $("#events-modal").load("handle-payment.php", { payment_id: response.razorpay_payment_id, evt_name: event_name });
+      }
+
+      function check_registered_and_open_payment(event_name, fees, name, college, email, phone) {
+        $("#reg-check").empty();
+        $("#reg-check").load("check-registered.php", { evt_name: event_name, email_id: email }, function() {
+          var is_registered = $('#reg-check').children().first().attr('data-is-registered');
+
+          if (is_registered == 'True')
+          {
+            alert("A person has already registered with this email!");
+          }
+
+          else
+          {
+            var options = {
+              "key": "rzp_test_R8DYN4gfYSznyT",
+              "amount": fees * 100, // Multiplied by 100 since razor-pay specifies in paisa.
+              "name": "BMSCE",
+              "description": "Registration for event: " + event_name,
+              "handler": function (response) {
+                  handle_payment(response, event_name);
+              },
+              "notes": {
+                  "name": name,
+                  "college": college,
+                  "email": email,
+                  "phone": phone
+              },
+              "theme": {
+                  "color": "#F37254"
+              }
+            };
+
+            var rzp1 = new Razorpay(options);
+
+            rzp1.open();
+          }
+        });
       }
 
         $(document).ready(function() {
@@ -148,28 +188,7 @@
 
             else
             {
-              var options = {
-                "key": "rzp_test_R8DYN4gfYSznyT",
-                "amount": parseInt(reg_fees) * 100, // Multiplied by 100 since razor-pay specifies in paisa.
-                "name": "BMSCE",
-                "description": "Registration for event: " + evt_name,
-                "handler": function (response){
-                    handle_payment(response, evt_name);
-                },
-                "notes": {
-                    "name": $('#first_name').val() + ' ' + $('#last_name').val(),
-                    "college": $('#college_name').val(),
-                    "email": $('#email').val(),
-                    "phone": $('#phno').val()
-                },
-                "theme": {
-                    "color": "#F37254"
-                }
-              };
-
-              var rzp1 = new Razorpay(options);
-
-              rzp1.open();
+              check_registered_and_open_payment(evt_name, parseInt(reg_fees), $('#first_name').val() + ' ' + $('#last_name').val(), $('#college_name').val(), $('#email').val(), $('#phno').val());
             }
           });
 

@@ -116,16 +116,35 @@
 
     echo  "</div>";
 
+
+    $num_registered = $row['Num_Reg'];
+    $max_registrations = $row['Max_Reg'];
     $event_name_sanitized = $event_name = str_replace("''", "&#39;", $event_name);
 
-    // Modal Footer
-    echo  "<div class='modal-footer'>
-            <div class='center-align'>
-              <a class='modal-action waves-effect waves-green btn-large register-btn' data-event-name='";
-    echo        $event_name_sanitized;
-    echo      "'>Register</a>
-            </div>
-          </div>";
+    if ($num_registered >= $max_registrations)
+    {
+      // Modal Footer
+      echo  "<div class='modal-footer'>
+              <div class='center-align'>
+                <a class='modal-action waves-effect waves-green btn-large disabled' data-event-name='";
+      echo        $event_name_sanitized;
+      echo      "'>Register</a>";
+      echo      "<p>Sorry, this event is full.</p>";
+      echo    "</div>
+            </div>";
+    }
+
+    else
+    {
+      // Modal Footer
+      echo  "<div class='modal-footer'>
+              <div class='center-align'>
+                <a class='modal-action waves-effect waves-green btn-large register-btn' data-event-name='";
+      echo        $event_name_sanitized;
+      echo      "'>Register</a>
+              </div>
+            </div>";
+    }
   }
 
 ?>

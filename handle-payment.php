@@ -32,6 +32,12 @@
 		$stmt->bind_param('issss', $row['ID'], $email, $name, $college, $phone);
 		$stmt->execute();
 
+		$num_reg = intval($row['Num_Reg']) + 1;
+		$e_id = intval($row['ID']);
+
+		$update_query = "UPDATE event SET Num_Reg = $num_reg WHERE ID = $e_id";
+		$update_result = mysqli_query($conn, $update_query);
+
   		echo 	"<div class='modal-content'>";
 
   		echo 		"<h3>Your payment was successful!</h3>
