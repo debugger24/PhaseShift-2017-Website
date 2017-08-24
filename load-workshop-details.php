@@ -115,11 +115,13 @@
 
     echo  "</div>";
 
+    $workshop_name_sanitized = $event_name = str_replace("''", "&#39;", $workshop_name);
+
     // Modal Footer
     echo  "<div class='modal-footer'>
             <div class='center-align'>
               <a class='modal-action waves-effect waves-green btn-large register-btn' data-event-name='";
-    echo        $row['Title'];
+    echo        $workshop_name_sanitized;
     echo      "'>Register</a>
             </div>
           </div>";

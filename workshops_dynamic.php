@@ -34,6 +34,7 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
       <script>
       function load_workshops_list() {
@@ -49,6 +50,11 @@
       function load_registration_form(workshop_name) {
         $("#workshops-modal").empty();
         $("#workshops-modal").load("load-registration-form.php", { evt_name: workshop_name });
+      }
+
+      function handle_payment(response, event_name) {
+        $("#workshops-modal").empty();
+        $("#workshops-modal").load("handle-payment.php", { payment_id: response.razorpay_payment_id, evt_name: event_name });
       }
 
         $(document).ready(function() {
@@ -68,6 +74,64 @@
           $("#workshops-modal").on("click", ".back-details-btn", function() {
             var evt_name = $(this).attr("data-event-name");
             load_workshop_modal(evt_name);
+          });
+
+          $("#workshops-modal").on("click", ".registration-submit-btn", function() {
+            var evt_name = $(this).attr("data-event-name");
+            var reg_fees = $(this).attr("data-reg-fees");
+
+            var email_regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+            if ($('#first_name').val() == "")
+            {
+              alert("Please enter your first name.");
+            }
+
+            else if ($('#last_name').val() == "")
+            {
+              alert("Please enter your last name.");
+            }
+
+            else if ($('#college_name').val() == "")
+            {
+              alert("Please enter your college name.");
+            }
+
+            else if (!email_regex.test($('#email').val()))
+            {
+              alert("Please enter a valid email.");
+            }
+
+            else if ($('#phno').val().length != 10)
+            {
+              alert("Please enter a valid phone number.");
+            }
+
+            else
+            {
+              var options = {
+                "key": "rzp_test_R8DYN4gfYSznyT",
+                "amount": parseInt(reg_fees) * 100, // Multiplied by 100 since razor-pay specifies in paisa.
+                "name": "BMSCE",
+                "description": "Registration for event: " + evt_name,
+                "handler": function (response){
+                    handle_payment(response, evt_name);
+                },
+                "notes": {
+                    "name": $('#first_name').val() + ' ' + $('#last_name').val(),
+                    "college": $('#college_name').val(),
+                    "email": $('#email').val(),
+                    "phone": $('#phno').val()
+                },
+                "theme": {
+                    "color": "#F37254"
+                }
+              };
+
+              var rzp1 = new Razorpay(options);
+
+              rzp1.open();
+            }
           });
 
           load_workshops_list();

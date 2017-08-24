@@ -59,15 +59,19 @@
 
 			      <div class='row'>
 			      	<div class='col s12'>
-			      	  <div class='center-align'>
-			      	    <button class='btn waves-effect waves-light disabled registration-submit-btn' type='submit' name='action'>Submit</button>
-					  </div>
+			      	  <div class='center-align'>";
+
+	$event_name_sanitized = $event_name = str_replace("''", "&#39;", $event_name);
+
+	echo 				"<a class='modal-action waves-effect waves-green btn registration-submit-btn' data-event-name='";
+	echo 				$event_name_sanitized;
+	echo 				"' data-reg-fees='";
+	echo 				$row['RegFees'];
+	echo				"'>Submit</a>";
+			      	    
+	echo 			  "</div>
 			      	</div>
 			      </div>
-
-
-				  <p class='center-align'>Registrations opening soon.</p>
-
 			    </form>
 			</div>";
 
