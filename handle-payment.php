@@ -23,13 +23,14 @@
   {
   	$row = mysqli_fetch_assoc($result);
 
-  	$pay_amount = intval($row['RegFees']) * 100; // Amount for razorpay is specified in paise.
+  	$event_fee = intval($row['RegFees']);
+  	$pay_amount = $event_fee * 100; // Amount for razorpay is specified in paise.
   	$response = $payment->capture(array('amount' => $pay_amount));
 
   	if ($response['captured'])
   	{
   		$stmt = $conn->prepare('INSERT INTO registration (id, email, name, college, phone, txn_id, fee) VALUES (?, ?, ?, ?, ?, ?, ?)');
-		$stmt->bind_param('isssssi', $row['ID'], $email, $name, $college, $phone, $payment_id, $pay_amount);
+		$stmt->bind_param('isssssi', $row['ID'], $email, $name, $college, $phone, $payment_id, $event_fee);
 		$stmt->execute();
 
 		$num_reg = intval($row['Num_Reg']) + 1;
