@@ -28,8 +28,8 @@
 
   	if ($response['captured'])
   	{
-  		$stmt = $conn->prepare('INSERT INTO registration (id, email, name, college, phone) VALUES (?, ?, ?, ?, ?)');
-		$stmt->bind_param('issss', $row['ID'], $email, $name, $college, $phone);
+  		$stmt = $conn->prepare('INSERT INTO registration (id, email, name, college, phone, txn_id, fee) VALUES (?, ?, ?, ?, ?, ?, ?)');
+		$stmt->bind_param('isssssi', $row['ID'], $email, $name, $college, $phone, $payment_id, $pay_amount);
 		$stmt->execute();
 
 		$num_reg = intval($row['Num_Reg']) + 1;

@@ -125,7 +125,7 @@
       echo  "<div class='modal-footer'>
               <div class='center-align'>
                 <a class='modal-action waves-effect waves-green btn-large disabled' data-event-name='";
-      echo        $event_name_sanitized;
+      echo        $workshop_name_sanitized;
       echo      "'>Register</a>";
       echo      "<p>Sorry, this event is full.</p>";
       echo    "</div>
@@ -138,7 +138,7 @@
       echo  "<div class='modal-footer'>
               <div class='center-align'>
                 <a class='modal-action waves-effect waves-green btn-large register-btn' data-event-name='";
-      echo        $event_name_sanitized;
+      echo        $workshop_name_sanitized;
       echo      "'>Register</a>
               </div>
             </div>";
