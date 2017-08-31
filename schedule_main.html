@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	</head>
+	<body class="blue-grey darken-3">
+	<div class="container" style="width: 95%; max-width: 1700px">
+		<div class="row" style="margin-top: 30px">
+			<div class="col s6 center-align">
+				<a class="waves-effect waves-light btn 15th_Button" style="padding-left: 60px; padding-right: 60px">15<sup>th</sup> Sep</a>
+			</div>
+			<div class="col s6 center-align">
+				<a class="waves-effect waves-light btn 16th_Button" style="padding-left: 60px; padding-right: 60px">16<sup>th</sup> Sep</a>
+			</div>
+		</div>
+	</div>
+		<div id="Schedule" style="width:90%;margin:auto">
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#Schedule").load("schedule.html");
+				$(".15th_Button").on("click",function(event){
+					$("#Schedule").load("schedule.html");
+				});
+				$(".16th_Button").on("click",function(event){
+					$("#Schedule").load("schedule1.html");
+				});
+			});
+		</script>
+	</body>
+</html>

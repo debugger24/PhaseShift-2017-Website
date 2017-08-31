@@ -1,18 +1,27 @@
 
 		<head>
 		<style>
-@media screen and (min-width: 765px) and (max-width:780px){
-		#ps{
-			font-size: 10px;
+		#li{
+
+			margin-top: 4px;
+		}
+		#top{
+			font-size: 0px;
+			margin-left: -20px;
+		}
+		@media only screen and (min-width: 769px) and (max-width : 1024px){
+			#top{
+				margin-right: 40px;
+			}
+		}
+		@media only screen and (min-width: 1025px) {
+			#top{
+				margin-right: 60px;
+				font-size: 15px;
+			}
 
 		}
-		#li{
-			margin-top: 5px;
-		}
-        #top{
-            font-size: 7px;
-        }
-	}
+
 
 		</style>
 		</head>
@@ -22,16 +31,16 @@
                 <button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target=".navbar-main-collapse" style="height:50%">
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="w3-button w3-black" href="#page-top" style="font-size:120%;padding:3%" id="li">
+                <!-- <a class="w3-button w3-black" href="#page-top" style="font-size:120%;padding:3%" id="li">
                     <img src="images/PS/WHITE LOGO.png" style="width:25px;height: 30px; vertical-align: middle;"></i> <span class="light" style=" vertical-align: middle;"id="ps" >&nbspPhase Shift 2017</span>
-                </a>
+                </a> -->
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse" id="top">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                   
+
 					<li>
                         <a href="#about" class="w3-button w3-black nav-button">About us</a>
                     </li>
@@ -53,6 +62,12 @@
 					<li>
                         <a class="w3-button w3-black nav-button" href="blog.html" id="blog">Blog</a>
                     </li>
+					<li>
+							<a class="w3-button w3-black nav-button" href="schedule_main.html" id="blog">Schedule</a>
+					</li>
+					<li>
+							<a class="w3-button w3-black nav-button" href="https://www.bmscephaseshift.com/app" id="blog">Android-App</a>
+					</li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
