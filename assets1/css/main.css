@@ -1,13 +1,8 @@
-@import url(font-awesome.min.css);
+
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
+@import "https://fonts.googleapis.com/css?family=Comfortaa";
+@import "https://fonts.googleapis.com/css?family=Combo";
 
-/*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-/* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -1649,7 +1644,7 @@
 	}
 
 	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Comfortaa",  sans-serif;
 		font-size: 17pt;
 		font-weight: 300;
 		line-height: 1.65;
@@ -3047,7 +3042,7 @@
 				-webkit-flex-direction: column-reverse;
 				-ms-flex-direction: column-reverse;
 				flex-direction: column-reverse;
-				text-align: center;
+				text-align: justify;
 			}
 
 				.spotlight .content {
@@ -3801,7 +3796,19 @@
 
 		}
 
-#intro {
+#vision{
 	background-color: #285765;
 	color: #ffffff;
 }
+ #audition {
+ 	background-color: #285765;
+	color: #ffffff;
+ }
+ #olfaction{
+	background-color: #285765;
+ 	color: #ffffff;
+ }
+ #radhakrishnan{
+	background-color: #285765;
+ 	color: #ffffff;
+ }
