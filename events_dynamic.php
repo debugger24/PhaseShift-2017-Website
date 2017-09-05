@@ -29,38 +29,56 @@
         <ul class="tabs tabs-fixed-width blue-grey darken-4" id="tab-scroll">
             <li class="tab col s1"><a class="category_btn active" href="#events-list" data-cat-name="Mission Possible">
               <span class="blue-grey-text text-lighten-4">Mission Possible</span>
+              <br/>
+              <span class="blue-grey-text text-lighten-4" style="font-size: 10px">Quest Events</span>
             </a></li>
 
             <li class="tab col s1"><a class="category_btn" href="#events-list" data-cat-name="Across the Panorama">
               <span class="blue-grey-text text-lighten-4">Across The Panorama</span>
+              <br/>
+              <span class="blue-grey-text text-lighten-4" style="font-size: 10px">General Events</span>
             </a></li>
 
             <li class="tab col s1"><a class="category_btn" href="#events-list" data-cat-name="Ingenuity">
               <span class="blue-grey-text text-lighten-4">Ingenuity</span>
+              <br/>
+              <span class="blue-grey-text text-lighten-4" style="font-size: 10px">Creative Events</span>
             </a></li>
 
             <li class="tab col s1"><a class="category_btn" href="#events-list" data-cat-name="Semicolon Redefined">
               <span class="blue-grey-text text-lighten-4">Semicolon Redefined</span>
+              <br/>
+              <span class="blue-grey-text text-lighten-4" style="font-size: 10px">Coding Events</span>
             </a></li>
 
             <li class="tab col s1"><a class="category_btn" href="#events-list" data-cat-name="Maze Break">
               <span class="blue-grey-text text-lighten-4">Maze Break</span>
+              <br/>
+              <span class="blue-grey-text text-lighten-4" style="font-size: 10px">Circuit Events</span>
             </a></li>
 
             <li class="tab col s1"><a class="category_btn" href="#events-list" data-cat-name="Automatons">
-            <span class="blue-grey-text text-lighten-4">Automatons</span>
+              <span class="blue-grey-text text-lighten-4">Automatons</span>
+              <br/>
+              <span class="blue-grey-text text-lighten-4" style="font-size: 10px">Robotics Events</span>
             </a></li>
 
             <li class="tab col s1"><a class="category_btn" href="#events-list" data-cat-name="Grease Monkey">
               <span class="blue-grey-text text-lighten-4">Grease Monkey</span>
+              <br/>
+              <span class="blue-grey-text text-lighten-4" style="font-size: 10px">Mech Events</span>
             </a></li>
 
             <li class="tab col s1"><a class="category_btn" href="#events-list" data-cat-name="Not so FAQ">
               <span class="blue-grey-text text-lighten-4">Not So FAQ</span>
+              <br/>
+              <span class="blue-grey-text text-lighten-4" style="font-size: 10px">Quizzing Events</span>
             </a></li>
 
             <li class="tab col s1"><a class="category_btn" href="#events-list" data-cat-name="Pioneer">
               <span class="blue-grey-text text-lighten-4">Pioneer</span>
+              <br/>
+              <span class="blue-grey-text text-lighten-4" style="font-size: 10px">Innovation Events</span>
             </a></li>
         </ul>
       </div>
@@ -69,13 +87,14 @@
 
       <div id="events-modal" class="modal"></div>
 
-      <div id="reg-check"></div>
+      <!-- <div id="reg-check"></div> -->
 
 
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+      <!-- <script src="https://checkout.razorpay.com/v1/checkout.js"></script> -->
 
       <script>
       function load_events_list(category_name) {
@@ -93,6 +112,7 @@
         $("#events-modal").load("load-registration-form.php", { evt_name: event_name });
       }
 
+      /*
       function handle_payment(response, event_name) {
         $("#events-modal").empty();
         $("#events-modal").load("handle-payment.php", { payment_id: response.razorpay_payment_id, evt_name: event_name });
@@ -135,6 +155,7 @@
           }
         });
       }
+      */
 
         $(document).ready(function() {
           // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
@@ -155,6 +176,7 @@
             load_registration_form(evt_name);
           });
 
+          /*
           $("#events-modal").on("click", ".registration-submit-btn", function() {
             var evt_name = $(this).attr("data-event-name");
             var reg_fees = $(this).attr("data-reg-fees");
@@ -191,6 +213,7 @@
               check_registered_and_open_payment(evt_name, parseInt(reg_fees), $('#first_name').val() + ' ' + $('#last_name').val(), $('#college_name').val(), $('#email').val(), $('#phno').val());
             }
           });
+          */
 
           $("#events-modal").on("click", ".back-details-btn", function() {
             var evt_name = $(this).attr("data-event-name");

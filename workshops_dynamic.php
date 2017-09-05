@@ -36,7 +36,8 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+      <!-- <script src="https://checkout.razorpay.com/v1/checkout.js"></script> -->
 
       <script>
       function load_workshops_list() {
@@ -54,6 +55,7 @@
         $("#workshops-modal").load("load-registration-form.php", { evt_name: workshop_name });
       }
 
+      /*
       function handle_payment(response, event_name) {
         $("#workshops-modal").empty();
         $("#workshops-modal").load("handle-payment.php", { payment_id: response.razorpay_payment_id, evt_name: event_name });
@@ -96,6 +98,7 @@
           }
         });
       }
+      */
 
         $(document).ready(function() {
           // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
@@ -116,6 +119,7 @@
             load_workshop_modal(evt_name);
           });
 
+          /*
           $("#workshops-modal").on("click", ".registration-submit-btn", function() {
             var evt_name = $(this).attr("data-event-name");
             var reg_fees = $(this).attr("data-reg-fees");
@@ -152,6 +156,7 @@
               check_registered_and_open_payment(evt_name, parseInt(reg_fees), $('#first_name').val() + ' ' + $('#last_name').val(), $('#college_name').val(), $('#email').val(), $('#phno').val());
             }
           });
+          */
 
           load_workshops_list();
         });

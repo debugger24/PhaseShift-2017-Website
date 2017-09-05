@@ -39,9 +39,28 @@
     echo    "</p>";
 
     // Start Date
-    echo    "<p><b>Start Date: </b>";
-    echo      $row['Date'];
-    echo    "</p>";
+    if (!empty($row['Date']))
+    {
+      echo    "<p><b>Start Date: </b>";
+      echo      $row['Date'];
+      echo    "</p>";
+    }
+
+    // Time
+    if (!empty($row['Time']))
+    {
+      echo    "<p><b>Timings: </b>";
+      echo      $row['Time'];
+      echo    "</p>";
+    }
+
+    // Venue
+    if (!empty($row['Venue']))
+    {
+      echo    "<p><b>Venue: </b>";
+      echo      $row['Venue'];
+      echo    "</p>";
+    }
 
     echo    "<br/>";
 
@@ -116,12 +135,9 @@
 
     echo  "</div>";
 
-
-    $num_registered = $row['Num_Reg'];
-    $max_registrations = $row['Max_Reg'];
     $event_name_sanitized = $event_name = str_replace("''", "&#39;", $event_name);
 
-    if ($num_registered >= $max_registrations)
+    if ($row['Full'] == 1)
     {
       // Modal Footer
       echo  "<div class='modal-footer'>

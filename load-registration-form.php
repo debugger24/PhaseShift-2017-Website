@@ -63,11 +63,13 @@
 
 	$event_name_sanitized = $event_name = str_replace("''", "&#39;", $event_name);
 
-	echo 				"<a class='modal-action waves-effect waves-green btn registration-submit-btn' data-event-name='";
+	echo 				"<a class='modal-action waves-effect waves-green btn registration-submit-btn disabled' data-event-name='";
 	echo 				$event_name_sanitized;
 	echo 				"' data-reg-fees='";
 	echo 				$row['RegFees'];
 	echo				"'>Submit</a>";
+
+  echo        "<p class='center-align'>Registrations opening soon.</p>";
 			      	    
 	echo 			  "</div>
 			      	</div>

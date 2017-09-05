@@ -22,7 +22,7 @@
       // Creating a card.
       echo    "<div class='col s12 l3'>
                 <div class='card blue-grey darken-1'>
-                  <div class='card-content white-text'>";
+                  <div class='card-content white-text' style='overflow-y: hidden; text-overflow: ellipsis; height: 200px'>";
 
       // Workshop Title
       echo          "<span class='card-title'>";
@@ -30,7 +30,7 @@
       echo          "</span>";
 
       // Workshop Description
-      echo          "<p style='display: -webkit-box; overflow: hidden; -webkit-line-clamp: 2; -webkit-box-orient: vertical'>";
+      echo          "<p style='display: -webkit-box; overflow: hidden; -webkit-line-clamp: 4; -webkit-box-orient: vertical'>";
       echo            $row['Description'];
       echo          "</p>";
       echo        "</div>";
